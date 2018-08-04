@@ -14,10 +14,7 @@ function playStream(idVideoTag, stream) {
 }
 
 const peer = new Peer({ 
-    key: 'peerjs',
-    host: 'video-call-app.herokuapp.com',
-    secure:true,
-    port:443
+    key: 'peerjs'
     
 });
 socket.on('list-users',function(arrayUsers){
