@@ -1,7 +1,7 @@
 const socket = io('https://video-call-app.herokuapp.com/');
 new WOW().init();
 $('video').hide();
-$('input#txtUsername').focus();
+
 function openStream() {
     const config = { audio: true, video: true };
     return navigator.mediaDevices.getUserMedia(config);

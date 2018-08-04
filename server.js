@@ -41,12 +41,9 @@ io.on('connection', socket => {
 	});
 });
 app.get('/',function(req,res){
-	var data={
-		username:req.session.username,
-		imgSrc:req.session.imgSrc,
-	};
-	res.render('index',{data:data});
+	
+	res.render('index');
 });
 
-app.set('port', process.env.PORT || 8080);
-http.listen(process.env.PORT || 8080);
+app.set('port', process.env.PORT || 3000);
+http.listen(process.env.PORT || 3000);
