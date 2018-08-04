@@ -45,5 +45,5 @@ app.get('/',function(req,res){
 	res.render('index');
 });
 
-http.set('port', process.env.PORT || 3000);
+//app.set('port', process.env.PORT || 3000);
 http.listen(process.env.PORT || 3000);
