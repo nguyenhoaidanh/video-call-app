@@ -1,0 +1,38 @@
+*
+{
+	margin: 0;
+	padding:0;
+}
+#div-signUp
+{
+	display: inline-block;
+}
+#content
+{
+	display: none;
+}
+#count
+{
+	font-weight: bold;
+	color: green;
+}
+li.list-group-item
+{
+	cursor: pointer;
+}
+video
+{
+	display: none;
+}
+video#localStream
+{
+}
+li.list-group-item
+{
+	padding-left: 15px;
+	width: 200px;
+}
+li.list-group-item img
+{
+
+}

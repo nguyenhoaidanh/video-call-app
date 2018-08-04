@@ -1,0 +1,92 @@
+<div class="header">
+			
+			<a href='#modal-login' class="" data-toggle="modal" id="login">
+			<img src="<%=data.imgSrc%>" id="avatar" width="40px" class="img-circle" height="40px"></img> 
+				       <span id="username"><%=data.username%></span></a>
+			 <a href='#modal-top' class="" data-toggle="modal" id="top">Top</a>
+
+</div>
+
+	<!--modal login -->
+	<div class="container" id="login-form">
+		<div class="modal fade wow jackInTheBox" id="modal-login">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title text-center">Your infomation</h4>
+					</div>
+					<div class="modal-body">
+						
+								 <form class="form" role="form" method="post" enctype="multipart/form-data" accept-charset="UTF-8" id="login-nav" action="/login">
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
+											 <input type="text" class="form-control" placeholder="User name" name="username" id="name" required>
+										</div>
+										<div class="form-group">
+											 <label class="sr-only" for="exampleInputPassword2">Password</label>
+											 <input type="file" class="form-control"  id="ava" name="ava" required>
+											 <span id="messLogin"></span>
+                                             
+										</div>
+										<div class="form-group">
+											 <button type="submit" id="save" class="btn btn-primary btn-block">Save</button>
+										</div>
+										
+								 </form>
+
+
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--rank -->
+	<div class="container" >
+		<div class="modal fade wow jackInTheBox" id="modal-top">
+			<div class="modal-dialog">
+				<div class="modal-content" id="rank">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title text-center">TOP 10</h4>
+					</div>
+					<div class="modal-body" id="rank-content">
+						
+								 
+
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--rank -->
+	<div class="container" >
+		<div class="modal fade wow jackInTheBox" id="modal-confirm">
+			<div class="modal-dialog">
+				<div class="modal-content" id="confirm" >
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title text-center">Thông báo</h4>
+					</div>
+					<div class="modal-body" id="rank-content">
+						
+							<h3>Vui lòng điền username để lưu lại điểm trên trang web. Nếu hủy bỏ thì điểm sẽ bị hủy.</h3>
+							<div class="form-group">
+											 <label class="sr-only" for="exampleInputEmail2">Email address</label>
+											 <input type="text" class="form-control" placeholder="User name" name="username" id="NAME" required>
+							</div>
+
+					</div>
+					<div class="modal-footer">
+						
+						<button type="button" data-dismiss="modal"   class="btn btn-danger">Cancel</button>
+						<button type="button" id="yes"  class="btn btn-info">Save</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
